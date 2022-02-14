@@ -1,3 +1,0 @@
-# AstroNote
-
-# Test
