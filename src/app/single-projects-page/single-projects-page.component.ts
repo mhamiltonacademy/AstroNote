@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DragDropTasksComponent } from '../drag-drop-tasks/drag-drop-tasks.component';
 
 @Component({
   selector: 'app-single-projects-page',
