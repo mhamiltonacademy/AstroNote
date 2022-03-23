@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {DragDropModule} from '@angular/cdk/drag-drop';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -10,12 +10,18 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import {MatInputModule} from '@angular/material/input';
+import { SingleProjectsPageComponent } from './single-projects-page/single-projects-page.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DragDropTasksComponent } from './drag-drop-tasks/drag-drop-tasks.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    SignUpComponent
+    SignUpComponent,
+    SingleProjectsPageComponent,
+    PageNotFoundComponent,
+    DragDropTasksComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +30,8 @@ import {MatInputModule} from '@angular/material/input';
     MatButtonModule,
     MatFormFieldModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
