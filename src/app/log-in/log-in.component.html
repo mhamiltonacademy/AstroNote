@@ -3,14 +3,10 @@
     <img id="logo" src="../../assets/Untitled_Artwork.png" alt="AstroNote"
   /></a>
 </nav>
-<div id="signup-page">
+<div id="login-page">
   <mat-form-field appearance="fill">
     <mat-label>Username</mat-label>
     <input type="username" matInput placeholder="Ex. patusernameexample" />
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>Email</mat-label>
-    <input type="email" matInput placeholder="Ex. pat@example.com" />
   </mat-form-field>
   <mat-form-field appearance="fill">
     <mat-label>Enter your password</mat-label>
@@ -31,10 +27,10 @@
       <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
     </button>
   </mat-form-field>
-  <a [routerLink]="['/']" mat-stroked-button class="color">Sign Up</a>
+  <a [routerLink]="['/']" mat-stroked-button class="color">Log in</a>
 
   <div id="login">
-    Already have an account?
-    <a [routerLink]="['/login']" class="text-link">Log in here.</a>
+    Don't have an account?
+    <a [routerLink]="['/signup']" class="text-link">Sign up here.</a>
   </div>
 </div>

@@ -11,7 +11,7 @@ nav {
   margin: -40px;
 }
 
-#signup-page {
+#login-page {
   display: flex;
   flex-direction: column;
   width: 20%;
