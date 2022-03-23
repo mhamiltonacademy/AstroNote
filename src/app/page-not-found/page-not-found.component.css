@@ -5,10 +5,13 @@
     z-index: 0;
 }
 
-#404ErrorMessage {
+#ErrorMessage {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 90%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    background-color: #c6d4ff;
+    font-size: 50px;
+    text-align: center;
 }
