@@ -28,16 +28,6 @@ nav {
   text-align: center;
 }
 
-a {
-  outline: none;
-  text-decoration: none;
-  padding: 2px 1px 0;
-}
-
-a:hover {
-  transform: scale(1.1);
-}
-
 .text-link {
   color: #05174b;
 }

@@ -1,11 +1,16 @@
 <div id="landing-page">
   <nav>
-    <img id="logo" src="../../assets/Untitled_Artwork.png" alt="" />
+    <a [routerLink]="['/']">
+      <img id="logo" src="../../assets/Untitled_Artwork.png" alt="AstroNote"
+    /></a>
     <ul>
-      <li><button mat-button>Log In</button></li>
+      <li>
+        <a [routerLink]="['/login']" class="text-link"><button mat-button>Log In</button></a>
+      </li>
       <li>
         <a [routerLink]="['/signup']" mat-stroked-button class="color"
-          >Try AstroNote</a>
+          >Try AstroNote</a
+        >
       </li>
     </ul>
   </nav>
