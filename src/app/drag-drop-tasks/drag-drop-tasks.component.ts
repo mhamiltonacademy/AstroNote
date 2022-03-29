@@ -10,6 +10,8 @@ export class DragDropTasksComponent {
 
     todo = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
 
+    progress = ['Nap', 'Nap again', 'Nap a 3rd time']
+
     done = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'];
 
     drop(event: CdkDragDrop<string[]>) {
