@@ -1,0 +1,22 @@
+#projects-page-content {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+#projects-page-form {
+  display: flex;
+  gap: 20px;
+  justify-content: right;
+}
+
+#projects-page-projects {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#projects-page-title {
+  text-align: center;
+}

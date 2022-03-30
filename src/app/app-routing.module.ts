@@ -6,6 +6,7 @@ import { SingleProjectsPageComponent } from './single-projects-page/single-proje
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'login', component: LogInComponent },
   { path: 'single-page', component: SingleProjectsPageComponent },
   { path: "dashboard", component: DashboardComponent},
+  { path: 'projects', component: ProjectsPageComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
