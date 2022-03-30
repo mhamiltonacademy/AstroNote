@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -15,6 +16,8 @@ import { SingleProjectsPageComponent } from './single-projects-page/single-proje
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DragDropTasksComponent } from './drag-drop-tasks/drag-drop-tasks.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +29,15 @@ import { NavbarComponent } from './navbar/navbar.component';
     PageNotFoundComponent,
     DragDropTasksComponent,
     NavbarComponent,
+    ProjectsPageComponent,
+    ProjectCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatCardModule,
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
