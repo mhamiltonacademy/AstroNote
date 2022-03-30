@@ -1,0 +1,23 @@
+#logo {
+  height: 150px;
+  width: 150px;
+}
+
+#navbar-container {
+  --dark-blue: #05174b;
+
+  align-items: center;
+  background-color: #c6d4ff;
+  border-bottom: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
+  display: flex;
+  height: 10%;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+
+#navbar-content button {
+  background-color: #05174b;
+  color: white;
+}

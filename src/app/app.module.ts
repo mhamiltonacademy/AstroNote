@@ -14,6 +14,7 @@ import { MatInputModule } from '@angular/material/input';
 import { SingleProjectsPageComponent } from './single-projects-page/single-projects-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DragDropTasksComponent } from './drag-drop-tasks/drag-drop-tasks.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DragDropTasksComponent } from './drag-drop-tasks/drag-drop-tasks.compon
     SingleProjectsPageComponent,
     PageNotFoundComponent,
     DragDropTasksComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
