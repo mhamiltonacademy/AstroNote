@@ -5,12 +5,14 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { SingleProjectsPageComponent } from './single-projects-page/single-projects-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LogInComponent } from './log-in/log-in.component';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'signup', component: SignUpComponent },
   { path: 'login', component: LogInComponent },
   { path: 'single-page', component: SingleProjectsPageComponent },
+  { path: 'projects', component: ProjectsPageComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
