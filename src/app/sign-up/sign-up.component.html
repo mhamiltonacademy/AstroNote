@@ -24,6 +24,7 @@
     <mat-label>Enter your email</mat-label>
     <input
       required
+      type="email"
       matInput
       placeholder="pat@example.com"
       [formControl]="email"
@@ -51,16 +52,12 @@
     >
       <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
     </button>
-    <mat-error *ngIf="password.invalid">{{
-      getErrorMessage("password")
-    }}</mat-error>
+    <mat-error *ngIf="password.invalid"
+      >{{ getErrorMessage("password") }}
+    </mat-error>
   </mat-form-field>
 
-  <a
-    [routerLink]="['/projects']"
-    type="submit"
-    mat-stroked-button
-    class="color"
+  <a [routerLink]="['/projects']" type="submit" mat-stroked-button class="color"
     >Sign up</a
   >
 
