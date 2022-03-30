@@ -1,7 +1,16 @@
 <nav id="navbar-container">
-  <img id="logo" src="assets/logo.png">
-  <div id="navbar-content">
+  <a href="/"><img id="logo" src="assets/logo.png" aria-label="astronote logo"></a>
+  <div id="navbar-content-left">
+    <button mat-button><a href="/dashboard">Dashboard</a></button>
+    <button mat-button><a href="/projects">Projects</a></button>
+    <button mat-button><a href="/assets">Assets</a></button>
+  </div>
+  <div id="navbar-content-right">
     <button mat-raised-button>Getting Started</button>
     <button mat-raised-button>Upgrade</button>
+    <!-- TODO: everything below here is off center vertically for some reason, fix it -->
+    <a href="/"><span class="material-icons" aria-label="settings">settings</span></a>
+    <a href="/"><span class="material-icons" aria-label="notifications">notifications</span></a>
+    <div>Username<span class="material-icons">arrow_drop_down</span></div>
   </div>
 </nav>

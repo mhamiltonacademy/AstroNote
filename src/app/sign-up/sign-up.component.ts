@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { getMatIconNameNotFoundError } from '@angular/material/icon';
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
@@ -32,17 +33,19 @@ export class SignUpComponent implements OnInit {
     ),
   ]);
 
-  getErrorMessage(message: any) {
-    if (this.username.hasError('required')) {
-      return 'You must enter a valid ' + message;
-    }
-    if (this.email.hasError('required')) {
-      return 'You must enter a valid ' + message;
-    }
-    if (this.password.hasError('required')) {
-      return 'Password must contain have 6 characters, at least one uppercase letter, one lowercase letter, one number, and one special character.';
-    }
-
-    return '';
+  getErrorMessageUsername(message: any) {
+    return this.username.hasError('required')
+      ? 'You must enter a valid ' + message
+      : ' ';
+  }
+  getErrorMessageEmail(message: any) {
+    return this.email.hasError('required')
+      ? 'You must enter a valid ' + message
+      : ' ';
+  }
+  getErrorMessagePassword() {
+    return this.password.hasError('required')
+      ? 'Password must at least have 6 characters, at least one uppercase letter, one lowercase letter, one number, and one special character.'
+      : ' ';
   }
 }

@@ -23,13 +23,9 @@ export class LogInComponent implements OnInit {
   password = new FormControl('', [Validators.required]);
 
   getErrorMessage(message: any) {
-    if (this.username.hasError('required')) {
-      return 'You must your ' + message;
-    }
-    if (this.password.hasError('required')) {
-      return 'You must your ' + message;
-    }
-
-    return this.username.hasError('input') ? 'Not a valid ' + message : '';
+    return this.username.hasError('required') ||
+      this.password.hasError('required')
+      ? 'You must enter a valid ' + message
+      : '';
   }
 }
