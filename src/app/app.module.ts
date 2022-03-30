@@ -15,6 +15,7 @@ import { MatInputModule } from '@angular/material/input';
 import { SingleProjectsPageComponent } from './single-projects-page/single-projects-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DragDropTasksComponent } from './drag-drop-tasks/drag-drop-tasks.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 
@@ -27,6 +28,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     SingleProjectsPageComponent,
     PageNotFoundComponent,
     DragDropTasksComponent,
+    NavbarComponent,
     ProjectsPageComponent,
     ProjectCardComponent,
   ],
