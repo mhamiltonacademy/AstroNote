@@ -5,14 +5,19 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { SingleProjectsPageComponent } from './single-projects-page/single-projects-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LogInComponent } from './log-in/log-in.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'signup', component: SignUpComponent },
   { path: 'login', component: LogInComponent },
   { path: 'single-page', component: SingleProjectsPageComponent },
+  { path: "dashboard", component: DashboardComponent},
   { path: '**', component: PageNotFoundComponent },
 ];
+
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

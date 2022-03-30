@@ -1,0 +1,20 @@
+.dashboard-layout {
+    display: grid;
+}
+
+.tasks {
+    border: 1px solid #05174b;
+    border-radius: 5px;
+    width: 20%;
+    /* background-color: #05174b; */
+    background-color: #c6d4ff;
+}
+
+.card {
+    margin: 10px;
+}
+
+.card:hover {
+    background-color: rgba(128, 128, 128, 0.404);
+    cursor: pointer;
+}
