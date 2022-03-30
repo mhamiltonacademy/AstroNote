@@ -1,0 +1,60 @@
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 50px;
+    color: #05174b;
+    height: 100vh;
+}
+
+form {
+    grid-row: 2/4;
+    grid-column: 2/8;
+    
+}
+#form {
+    width: 100%;
+}
+.today {
+    grid-column: 2/5;
+    grid-row: 4/5;
+}
+.upcoming {
+    grid-column: 5/8;
+    grid-row: 4/5;
+}
+.projects {
+    grid-column: 2/8;
+    grid-row: 5/7;
+}
+
+.tasks {
+    height: 200px;
+    --dark-blue: #05174b;
+    border-color: var(--dark-blue);
+    border-width: 1px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1),
+                0 4px 4px 0 rgba(0, 0, 0, 0.3),
+                0 2px 2px 0 rgba(0, 0, 0, 0.5);
+    color: var(--dark-blue);
+    padding: 15px;
+    overflow-y: scroll;
+}
+
+.card {
+    margin: 15px;
+    background-color: #05174b;
+    color: white;
+    display: flex;
+    justify-content: space-between
+}
+
+.card:hover {
+    background-color: rgba(87, 84, 84, 0.685);
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 40px;
+    grid-column: 4/7;
+    margin-top: 60px;
+}

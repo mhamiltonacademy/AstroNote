@@ -15,10 +15,12 @@ import { MatInputModule } from '@angular/material/input';
 import { SingleProjectsPageComponent } from './single-projects-page/single-projects-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DragDropTasksComponent } from './drag-drop-tasks/drag-drop-tasks.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     SingleProjectsPageComponent,
     PageNotFoundComponent,
     DragDropTasksComponent,
+    DashboardComponent,
     NavbarComponent,
     ProjectsPageComponent,
     ProjectCardComponent,
@@ -44,6 +47,9 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     MatIconModule,
     MatInputModule,
     DragDropModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent],

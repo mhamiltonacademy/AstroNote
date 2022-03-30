@@ -5,25 +5,43 @@
 </nav>
 
 <div id="signup-page">
-
   <mat-form-field appearance="fill">
     <mat-label>Username</mat-label>
-    <input type="username" matInput placeholder="Ex. patusernameexample" />
+    <input
+      required
+      type="username"
+      minlength="6"
+      matInput
+      placeholder="Ex. patusernameexample"
+      [formControl]="username"
+    />
+    <mat-error *ngIf="username.invalid">{{
+      getErrorMessage("username")
+    }}</mat-error>
   </mat-form-field>
 
   <mat-form-field appearance="fill">
-    <mat-label>Email</mat-label>
-    <input type="email" matInput placeholder="Ex. pat@example.com" />
+    <mat-label>Enter your email</mat-label>
+    <input
+      required
+      type="email"
+      matInput
+      placeholder="pat@example.com"
+      [formControl]="email"
+    />
+    <mat-error *ngIf="email.invalid">{{ getErrorMessage("email") }}</mat-error>
   </mat-form-field>
 
   <mat-form-field appearance="fill">
     <mat-label>Enter your password</mat-label>
     <input
+      required
       matInput
       [type]="hide ? 'password' : 'text'"
       type="password"
       matInput
       placeholder="Don't share your password with anyone"
+      [formControl]="password"
     />
     <button
       mat-icon-button
@@ -34,13 +52,17 @@
     >
       <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
     </button>
+    <mat-error *ngIf="password.invalid"
+      >{{ getErrorMessage("password") }}
+    </mat-error>
   </mat-form-field>
 
-  <a [routerLink]="['/']" mat-stroked-button class="color">Sign Up</a>
+  <a [routerLink]="['/dashboard']" type="submit" mat-stroked-button class="color"
+    >Sign up</a
+  >
 
   <div id="login">
     Already have an account?
     <a [routerLink]="['/login']" class="text-link">Log in here.</a>
   </div>
-  
 </div>
