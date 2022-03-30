@@ -3,11 +3,14 @@
     <img id="logo" src="../../assets/Untitled_Artwork.png" alt="AstroNote"
   /></a>
 </nav>
+
 <div id="login-page">
+
   <mat-form-field appearance="fill">
     <mat-label>Username</mat-label>
     <input type="username" matInput placeholder="Ex. patusernameexample" />
   </mat-form-field>
+
   <mat-form-field appearance="fill">
     <mat-label>Enter your password</mat-label>
     <input
@@ -26,6 +29,7 @@
     >
       <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
     </button>
+
   </mat-form-field>
   <a [routerLink]="['/']" mat-stroked-button class="color">Log in</a>
 
@@ -33,4 +37,5 @@
     Don't have an account?
     <a [routerLink]="['/signup']" class="text-link">Sign up here.</a>
   </div>
+  
 </div>
