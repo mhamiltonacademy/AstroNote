@@ -4,7 +4,9 @@
     <mat-form-field id="projects-page-search">
       <input matInput appearance="fill" type="search" placeholder="Search for project">
     </mat-form-field>
-    <button mat-mini-fab id="projects-page-add-project-button"></button>
+    <button mat-mini-fab id="projects-page-add-project-button" aria-label="add a project">
+      <span class="material-icons">add</span>
+    </button>
   </div>
   <section id="projects-page-projects">
     <app-project-card></app-project-card>
