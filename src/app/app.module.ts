@@ -18,6 +18,7 @@ import { DragDropTasksComponent } from './drag-drop-tasks/drag-drop-tasks.compon
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     NavbarComponent,
     ProjectsPageComponent,
     ProjectCardComponent,
+    SearchBarComponent,
   ],
   imports: [
     BrowserModule,
