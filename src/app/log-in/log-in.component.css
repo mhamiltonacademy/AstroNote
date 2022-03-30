@@ -29,6 +29,7 @@ nav {
 }
 
 .text-link {
+  text-decoration: none;
   color: #05174b;
 }
 .text-link:hover {

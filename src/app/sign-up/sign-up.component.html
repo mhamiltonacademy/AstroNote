@@ -1,6 +1,6 @@
 <nav>
   <a [routerLink]="['/']">
-    <img id="logo" src="../../assets/Untitled_Artwork.png" alt="AstroNote"
+    <img id="logo" src="../../assets/logo.png" alt="AstroNote"
   /></a>
 </nav>
 
@@ -29,7 +29,9 @@
       placeholder="pat@example.com"
       [formControl]="email"
     />
-    <mat-error *ngIf="email.invalid">{{ getErrorMessageEmail("email") }}</mat-error>
+    <mat-error *ngIf="email.invalid">{{
+      getErrorMessageEmail("email")
+    }}</mat-error>
   </mat-form-field>
 
   <mat-form-field appearance="fill">
@@ -56,8 +58,13 @@
       >{{ getErrorMessagePassword() }}
     </mat-error>
   </mat-form-field>
+<br>
 
-  <a [routerLink]="['/dashboard']" type="submit" mat-stroked-button class="color"
+  <a
+    [routerLink]="['/dashboard']"
+    type="submit"
+    mat-stroked-button
+    class="color"
     >Sign up</a
   >
 
