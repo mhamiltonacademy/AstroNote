@@ -45,7 +45,7 @@ export class SignUpComponent implements OnInit {
   }
   getErrorMessagePassword() {
     return this.password.hasError('required')
-      ? 'Password must contain have 6 characters, at least one uppercase letter, one lowercase letter, one number, and one special character.'
+      ? 'Password must at least have 6 characters, at least one uppercase letter, one lowercase letter, one number, and one special character.'
       : ' ';
   }
 }
