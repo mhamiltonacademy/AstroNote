@@ -19,6 +19,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,8 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     MatIconModule,
     MatInputModule,
     DragDropModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatCardModule
   ],
   providers: [],
