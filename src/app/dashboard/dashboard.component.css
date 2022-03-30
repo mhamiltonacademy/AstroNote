@@ -3,6 +3,7 @@
     grid-template-columns: repeat(8, 1fr);
     gap: 50px;
     color: #05174b;
+    height: 100vh;
 }
 
 form {

@@ -16,6 +16,7 @@ import { SingleProjectsPageComponent } from './single-projects-page/single-proje
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DragDropTasksComponent } from './drag-drop-tasks/drag-drop-tasks.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 
@@ -29,6 +30,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     PageNotFoundComponent,
     DragDropTasksComponent,
     DashboardComponent,
+    NavbarComponent,
     ProjectsPageComponent,
     ProjectCardComponent,
   ],
