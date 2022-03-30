@@ -1,12 +1,30 @@
-<h1>Project Name (+ edit button)</h1>
-<p>Project Description</p>
-<ul>
-    <li>Use material ui components to create a box</li>
-    <li>Add placeholder for project description</li>
-</ul>
+<div id="pageContainer">
+    <h1>AstroNote (+ edit button)</h1>
 
-<button>Add Collaborators</button>
+    <br /><br />
 
-<app-search-bar></app-search-bar>
+    <button>Add Collaborators</button>
 
-<app-drag-drop-tasks></app-drag-drop-tasks>
+    <br /><br />
+
+    <app-search-bar></app-search-bar>
+
+    <br /><br />
+
+    <div id="description">
+        Description
+        <br />
+        AstroNote is a promising new startup hoping to make engineers from The
+        Margaret Hamilton Academy of Code more productive. They aspire to launch a
+        web-platform where engineers can define projects and necessary sub-tasks
+        needed. They should also be able to mark tasks and projects as completed,
+        assign them to other engineers, and sort them by status, alphabetical order,
+        priority, assignee etc.
+    </div>
+
+    <br /><br />
+
+    <div id="taskContainer">
+        <app-drag-drop-tasks id="tasks"></app-drag-drop-tasks>
+    </div>
+</div>

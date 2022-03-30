@@ -1,1 +1,18 @@
+#pageContainer {
+    margin: 20px 100px;
+}
 
+#description {
+    border: 1px solid #05174b;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+#taskContainer {
+    display: flex;
+}
+
+#task {
+    justify-content: center;
+    align-items: center;
+}
