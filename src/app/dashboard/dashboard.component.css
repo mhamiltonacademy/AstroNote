@@ -42,8 +42,8 @@ form {
 
 .card {
     margin: 15px;
-    background-color: #05174b;
-    color: white;
+    background-color: #c6d4ff;
+    color: #05174b;
     display: flex;
     justify-content: space-between
 }
