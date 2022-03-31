@@ -15,11 +15,6 @@ export class LogInComponent implements OnInit {
   ngOnInit(): void {}
 
   username = new FormControl('', [Validators.required]);
-  email = new FormControl('', [
-    Validators.required,
-    Validators.email,
-    Validators.pattern('[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}'),
-  ]);
   password = new FormControl('', [Validators.required]);
 
   getErrorMessage(message: any) {
