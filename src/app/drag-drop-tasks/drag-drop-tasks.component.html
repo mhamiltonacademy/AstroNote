@@ -2,7 +2,7 @@
     <div class="example-container">
         <div class="tasks-heading">
             <h2 id="heading">To do</h2>
-            <span class="material-icons md-36">
+            <span class="material-icons md-36" (click)="addTask()">
                 add_circle
             </span>
         </div>
@@ -17,8 +17,8 @@
             <div class="example-box" *ngFor="let item of todo" cdkDrag>
                 {{item}}
                 <div>
-                    <span class="material-icons">edit</span>
-                    <span class="material-icons">delete</span>
+                    <span class="material-icons" (click)="editTask()">edit</span>
+                    <span class="material-icons" (click)="deleteTask()">delete</span>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@
     <div class="example-container">
         <div class="tasks-heading">
             <h2 id="heading">In Progress</h2>
-            <span class="material-icons md-36">
+            <span class="material-icons md-36" (click)="addTask()">
                 add_circle
             </span>
         </div>
@@ -42,8 +42,8 @@
             <div class="example-box" *ngFor="let item of progress" cdkDrag>
                 {{item}}
                 <div>
-                    <span class="material-icons">edit</span>
-                    <span class="material-icons">delete</span>
+                    <span class="material-icons" (click)="editTask()">edit</span>
+                    <span class="material-icons" (click)="deleteTask()">delete</span>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
     <div class="example-container">
         <div class="tasks-heading">
             <h2 id="heading">Done</h2>
-            <span class="material-icons md-36">
+            <span class="material-icons md-36" (click)="addTask()">
                 add_circle
             </span>
         </div>
@@ -67,8 +67,8 @@
             <div class="example-box" *ngFor="let item of done" cdkDrag>
                 {{item}}
                 <div>
-                    <span class="material-icons">edit</span>
-                    <span class="material-icons">delete</span>
+                    <span class="material-icons" (click)="editTask()">edit</span>
+                    <span class="material-icons" (click)="deleteTask()">delete</span>
                 </div>
             </div>
         </div>

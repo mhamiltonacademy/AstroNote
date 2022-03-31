@@ -27,4 +27,16 @@ export class DragDropTasksComponent {
     }
     }
 
+    addTask() {
+        console.log("ADDING a task")
+    }
+
+    editTask() {
+        console.log("EDITING a task")
+    }
+
+    deleteTask() {
+        console.log("DELETING a task")
+    }
+
 }
