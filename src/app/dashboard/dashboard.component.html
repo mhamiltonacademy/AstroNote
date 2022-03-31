@@ -1,6 +1,7 @@
+<app-navbar></app-navbar>
 <div class="dashboard-layout">
     <h1>Greetings, Earthling #261</h1>
-    
+
     <form action="/single-page" >
         <mat-form-field appearance="fill" id="form">
             <input type="search" matInput placeholder="Search For Project... " />
@@ -19,7 +20,7 @@
         <h3>Upcoming Tasks</h3>
         <div class="tasks">
                 <mat-card class="card" [routerLink]="['/single-page']" *ngFor="let item of upcoming">{{item}}</mat-card>
-            
+
         </div>
     </div>
 
