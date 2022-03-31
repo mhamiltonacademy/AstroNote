@@ -1,13 +1,13 @@
 <mat-card id="project-card-container">
-  <mat-card-subtitle id="project-card-title">Project Name</mat-card-subtitle>
+  <mat-card-title id="project-card-title">{{project.name}}</mat-card-title>
   <mat-card-content id="project-card-content">
-    <p>Number of Tasks</p>
+    <p>{{project.tasks}} Tasks</p>
     <p>Number of Teammates</p>
-    <p>Deadline</p>
+    <p>Deadline: {{project.deadline}}</p>
   </mat-card-content>
   <hr>
   <mat-card-footer id="project-card-footer">
-    <div>Tasks In Progress</div>
+    <div>{{project.inProgress}} Tasks In Progress</div>
     <div>Tasks Not Started</div>
     <div>Tasks Completed</div>
   </mat-card-footer>

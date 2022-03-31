@@ -19,6 +19,6 @@
 
 #project-card-footer {
   display: flex;
-  gap: 10px;
+  gap: 25px;
   margin: 0 15px 0 15px;
 }
