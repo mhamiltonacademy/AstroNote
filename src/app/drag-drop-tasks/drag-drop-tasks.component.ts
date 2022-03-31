@@ -8,11 +8,11 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
 })
 export class DragDropTasksComponent {
 
-    todo = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
+    todo = ['Edit project name ability', 'Search bar functionality', 'Nap a 3rd time', 'Fix Add Collaborators button'];
 
-    progress = ['Nap', 'Nap again', 'Nap a 3rd time'];
+    progress = ['Edit task functionality', 'Add task functionality', 'Nap again'];
 
-    done = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'];
+    done = ['Single page CSS styling', 'Add Edit Buttons', 'Nap', 'Check e-mail'];
 
     drop(event: CdkDragDrop<string[]>) {
         if (event.previousContainer === event.container) {
