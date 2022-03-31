@@ -1,30 +1,32 @@
-<div id="pageContainer">
-    <h1>AstroNote (+ edit button)</h1>
-
-    <br /><br />
-
-    <button>Add Collaborators</button>
+<div id="page-container">
+    <div id="heading-collaborator-container">
+        <div id="heading-edit-container">
+            <h1 id="project-name">AstroNote</h1>
+            <span class="material-icons">edit</span>
+        </div>
+        <button mat-raised-button id="collaborator-btn">Add Collaborators</button>
+    </div>
 
     <br /><br />
 
     <app-search-bar></app-search-bar>
 
-    <br /><br />
+    <br />
 
     <div id="description">
-        Description
-        <br />
-        AstroNote is a promising new startup hoping to make engineers from The
-        Margaret Hamilton Academy of Code more productive. They aspire to launch a
-        web-platform where engineers can define projects and necessary sub-tasks
-        needed. They should also be able to mark tasks and projects as completed,
-        assign them to other engineers, and sort them by status, alphabetical order,
-        priority, assignee etc.
+        <h4>Description</h4>
+        <p>
+            AstroNote is a promising new startup hoping to make engineers from The
+            Margaret Hamilton Academy of Code more productive. They aspire to launch a
+            web-platform where engineers can define projects and necessary sub-tasks
+            needed. They should also be able to mark tasks and projects as completed,
+            assign them to other engineers, and sort them by status, alphabetical order,
+            priority, assignee etc.
+        </p>
     </div>
 
     <br /><br />
 
-    <div id="taskContainer">
         <app-drag-drop-tasks id="tasks"></app-drag-drop-tasks>
-    </div>
+
 </div>

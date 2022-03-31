@@ -1,18 +1,36 @@
-#pageContainer {
+#page-container {
     margin: 20px 100px;
+}
+
+#heading-collaborator-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#heading-edit-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#project-name {
+    margin: 10px;
+}
+
+.material-icons {
+    color: #05174b;
+    align-self: center;
+}
+
+#collaborator-btn {
+    background-color: #05174b;
+    color: white;
+    margin: 0 5px 0 0;
 }
 
 #description {
     border: 1px solid #05174b;
     border-radius: 3px;
-    padding: 20px;
-}
-
-#taskContainer {
-    display: flex;
-}
-
-#task {
-    justify-content: center;
-    align-items: center;
+    padding: 15px 30px;
 }
