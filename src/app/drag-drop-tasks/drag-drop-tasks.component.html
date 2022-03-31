@@ -18,7 +18,7 @@
                 {{item}}
                 <div>
                     <span class="material-icons" (click)="editTask()">edit</span>
-                    <span class="material-icons" (click)="deleteTask()">delete</span>
+                    <span class="material-icons" (click)="deleteTask(item, 'todo')">delete</span>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
                 {{item}}
                 <div>
                     <span class="material-icons" (click)="editTask()">edit</span>
-                    <span class="material-icons" (click)="deleteTask()">delete</span>
+                    <span class="material-icons" (click)="deleteTask(item, 'progress')">delete</span>
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@
                 {{item}}
                 <div>
                     <span class="material-icons" (click)="editTask()">edit</span>
-                    <span class="material-icons" (click)="deleteTask()">delete</span>
+                    <span class="material-icons" (click)="deleteTask(item, 'done')">delete</span>
                 </div>
             </div>
         </div>
