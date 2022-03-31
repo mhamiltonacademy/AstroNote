@@ -14,39 +14,48 @@ AstroNote is a promising new startup hoping to make engineers from The Margaret 
 - ??? This is a future problem…
 
 ## Functional Requirements:
+
 ### Projects
-[ ] Accessibility: who can edit projects/tasks/assignees?
-[ ] Create projects
-[ ] Read projects
-[ ] Update projects
-[ ] Delete projects
-[ ] Mark projects as completed
+
+- [ ] Accessibility: who can edit projects/tasks/assignees?
+- [ ] Create projects
+- [ ] Read projects
+- [ ] Update projects
+- [ ] Delete projects
+- [ ] Mark projects as completed
+
 ### Assignments
-[ ] Assign projects to engineers
-[ ] Assign engineers tasks
-[ ] Engineers can only be assigned tasks from projects they are a part of
-[ ] Unassign engineers from a project
-[ ] Tasks need to be unassigned first
+
+- [ ] Assign projects to engineers
+- [ ] Assign engineers tasks
+- [ ] Engineers can only be assigned tasks from projects they are a part of
+- [ ] Unassign engineers from a project
+- [ ] Tasks need to be unassigned first
+
 ### Tasks
-[ ] Create new tasks within projects
-[ ] Read tasks
-[ ] Update tasks
-[ ] Delete tasks
-[ ] Mark tasks as completed
-[ ] Sort tasks by…
-[ ] Status
-[ ] Alphabetical order
-[ ] Priority
-[ ] Assignee
+
+- [ ] Create new tasks within projects
+- [ ] Read tasks
+- [ ] Update tasks
+- [ ] Delete tasks
+- [ ] Mark tasks as completed
+- [ ] Sort tasks by…
+- [ ] Status
+- [ ] Alphabetical order
+- [ ] Priority
+- [ ] Assignee
+
 ### Testing (...)
-[ ] cypress.io
+
+- [ ] cypress.io
 
 ## Additional Requirements:
-[ ] User Story
-[ ] App is responsive
-[ ] App is accessible
-[ ] Need to take Lighthouse score into account
-[ ] Initial Approach: Build website mobile first, then desktop
+
+- [ ] User Story
+- [ ] App is responsive
+- [ ] App is accessible
+- [ ] Need to take Lighthouse score into account
+- [ ] Initial Approach: Build website mobile first, then desktop
 
 ## Penpot
 [See penpot file here](src/assets/AstroNote.penpot)
