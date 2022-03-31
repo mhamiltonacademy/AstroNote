@@ -21,6 +21,7 @@
 .material-icons {
     color: #05174b;
     align-self: center;
+    cursor: pointer;
 }
 
 #collaborator-btn {
