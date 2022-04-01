@@ -47,10 +47,15 @@ export class DragDropTasksComponent {
     addTask() {
         console.log("ADDING a task")
         this.openDialog()
+        // Button should be Add Task
     }
 
     editTask() {
         console.log("EDITING a task")
+        this.openDialog();
+        // The edit button should pass down the current information and prepopulate
+        // the form with existing data
+        // Button should be Update
     }
 
     deleteTask(task: string, taskList: string) {

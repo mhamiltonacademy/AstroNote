@@ -9,13 +9,13 @@ import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 })
 
 export class DialogComponent implements OnInit {
-    form!: FormGroup;
+    form!: FormGroup; // added '!' workaround b/c kept getting error requiring me to initialize it in the constructor
     description:string;
 
     constructor(
         private fb: FormBuilder,
         private dialogRef: MatDialogRef<DialogComponent>,
-        @Inject(MAT_DIALOG_DATA) data: any) {
+        @Inject(MAT_DIALOG_DATA) data: any) { // may need to change data type
             this.description = data.description;
         }
 
