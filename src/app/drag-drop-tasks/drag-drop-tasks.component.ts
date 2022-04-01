@@ -38,15 +38,15 @@ export class DragDropTasksComponent {
     deleteTask(task: string, taskList: string) {
         switch (taskList) {
             case 'todo':
-                console.log("SwitchCase:", 'To Do list')
+                // console.log("SwitchCase:", 'To Do list')
                 this.todo = this.todo.filter(t => t !== task);
                 break;
             case 'progress':
-                console.log("SwitchCase:", 'In Progress list')
+                // console.log("SwitchCase:", 'In Progress list')
                 this.progress = this.progress.filter(t => t !== task);
                 break;
             case 'done':
-                console.log("SwitchCase:", 'Done list')
+                // console.log("SwitchCase:", 'Done list')
                 this.done = this.done.filter(t => t !== task);
                 break;
         }
