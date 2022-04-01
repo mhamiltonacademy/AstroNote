@@ -21,6 +21,8 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProjectsPageComponent,
     ProjectCardComponent,
     SearchBarComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DragDropModule,
     FormsModule,
     ReactiveFormsModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],

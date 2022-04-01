@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
+import {MatDialog, MatDialogConfig} from '@angular/material/dialog'
+import { DialogComponent } from '../dialog/dialog.component';
 
 @Component({
     selector: 'app-drag-drop-tasks',
@@ -7,6 +9,7 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
     styleUrls: ['./drag-drop-tasks.component.css']
 })
 export class DragDropTasksComponent {
+    constructor(private dialog: MatDialog) { }
 
     todo = ['Edit project name ability', 'Search bar functionality', 'Nap a 3rd time', 'Fix Add Collaborators button'];
 
@@ -27,8 +30,23 @@ export class DragDropTasksComponent {
         }
     }
 
+    openDialog() {
+        const dialogConfig = new MatDialogConfig();
+
+        dialogConfig.disableClose = true; // user will not be able to close dialog by clicking outside of it
+        dialogConfig.autoFocus = true; // focus will automatically be set on the first form field
+
+        dialogConfig.data = {
+            id: 1,
+            title: 'Angular For Beginners'
+        };
+
+        this.dialog.open(DialogComponent, dialogConfig);
+    }
+
     addTask() {
         console.log("ADDING a task")
+        this.openDialog()
     }
 
     editTask() {
