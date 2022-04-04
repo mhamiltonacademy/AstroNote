@@ -1,14 +1,37 @@
-<h2 mat-dialog-title>{{description}}</h2>
+<h2 mat-dialog-title>Edit Task</h2>
 
-<mat-dialog-content [formGroup]="form">
+<form [formGroup]="form">
 
     <mat-form-field>
-        <input matInput
-            placeholder="Course Description"
-            formControlName="description">
+        <textarea matInput
+            placeholder="Task Description"
+            formControlName="description"></textarea>
     </mat-form-field>
-
-</mat-dialog-content>
+    <br />
+    <mat-form-field>
+        <input matInput
+            placeholder="Deadline"
+            formControlName="deadline">
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+        <input matInput
+            placeholder="Priority"
+            formControlName="priority">
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+        <input matInput
+            placeholder="Progress"
+            formControlName="progress">
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+        <input matInput
+        placeholder="Assignee"
+        formControlName="engineer_id">
+    </mat-form-field>
+</form>
 
 <mat-dialog-actions>
     <button class="mat-raised-button"(click)="close()">Close</button>
