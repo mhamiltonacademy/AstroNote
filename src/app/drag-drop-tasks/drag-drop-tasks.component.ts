@@ -30,17 +30,24 @@ export class DragDropTasksComponent {
         }
     }
 
+    // editDescription: string, editDeadline: Date, editPriority: string, editProgress: number, editEngineerId: number, editProjectId: number
     openDialog() {
+        // Dialog Settings
         const dialogConfig = new MatDialogConfig();
-
         dialogConfig.disableClose = true; // user will not be able to close dialog by clicking outside of it
         dialogConfig.autoFocus = true; // focus will automatically be set on the first form field
-
-        dialogConfig.data = {
-            id: 1,
-            title: 'Angular For Beginners'
+        dialogConfig.data = { // data that can be passed into the dialog (use this for editTask)
+            description: undefined,
+            deadline: undefined,
+            priority: undefined,
+            progress: undefined,
+            engineer_id: undefined,
+            project_id: undefined,
         };
 
+        console.log("data:", dialogConfig.data);
+
+        // Opens a modal dialog containing the given component
         this.dialog.open(DialogComponent, dialogConfig);
     }
 
