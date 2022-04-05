@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, ReactiveFormsModule} from '@angular/forms';
+import {FormBuilder, FormGroup} from '@angular/forms';
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 
 @Component({
@@ -20,22 +20,22 @@ export class DialogComponent implements OnInit {
     constructor(
         private fb: FormBuilder,
         private dialogRef: MatDialogRef<DialogComponent>,
-        @Inject(MAT_DIALOG_DATA) data: any) { // may need to change data type
+        @Inject(MAT_DIALOG_DATA) data: any) {
             this.description = data.description;
             this.deadline = data.deadline;
             this.priority = data.priority;
             this.progress = data.progress;
             this.engineer_id = data.engineer_id;
             this.project_id = data.project_id;
-        }
+    }
 
     ngOnInit() {
         this.form = this.fb.group({
-            description: '',
-            deadline: '',
-            priority: '',
-            progress: '',
-            engineer_id: ''
+            description: this.description,
+            deadline: this.deadline,
+            priority: this.priority,
+            progress: this.progress,
+            engineer_id: this.engineer_id
         });
     }
 
