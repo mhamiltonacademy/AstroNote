@@ -19,8 +19,10 @@ export class DragDropTasksComponent {
 
     drop(event: CdkDragDrop<string[]>) {
         if (event.previousContainer === event.container) {
-        moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+            // if it's moved within the same list. i.e. if the order of tasks changes
+            moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
         } else {
+            // if it's moved to a different list, then update the list
             transferArrayItem(
                 event.previousContainer.data,
                 event.container.data,
@@ -37,6 +39,7 @@ export class DragDropTasksComponent {
         dialogConfig.disableClose = true; // user will not be able to close dialog by clicking outside of it
         dialogConfig.autoFocus = true; // focus will automatically be set on the first form field
         dialogConfig.data = { // data that can be passed into the dialog (use this for editTask)
+            name: undefined,
             description: undefined,
             deadline: undefined,
             priority: undefined,
@@ -45,10 +48,14 @@ export class DragDropTasksComponent {
             project_id: undefined,
         };
 
-        console.log("data:", dialogConfig.data);
+        console.log("openDialog data:", dialogConfig.data);
 
         // Opens a modal dialog containing the given component
-        this.dialog.open(DialogComponent, dialogConfig);
+        const dialogRef = this.dialog.open(DialogComponent, dialogConfig);
+
+        dialogRef.afterClosed().subscribe(
+            data => console.log("Dialog output:", data)
+        );
     }
 
     addTask() {
@@ -57,9 +64,10 @@ export class DragDropTasksComponent {
         // Button should be Add Task
     }
 
-    editTask() {
+    editTask(task: string) {
         console.log("EDITING a task")
         this.openDialog();
+        console.log("editTask, single task:", task)
         // The edit button should pass down the current information and prepopulate
         // the form with existing data
         // Button should be Update
