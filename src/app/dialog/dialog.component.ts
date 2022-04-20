@@ -10,6 +10,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 
 export class DialogComponent implements OnInit {
     form!: FormGroup; // added '!' workaround b/c kept getting error requiring me to initialize it in the constructor
+    name: string;
     description: string;
     deadline: Date;
     priority: string;
@@ -21,6 +22,7 @@ export class DialogComponent implements OnInit {
         private fb: FormBuilder,
         private dialogRef: MatDialogRef<DialogComponent>,
         @Inject(MAT_DIALOG_DATA) data: any) {
+            this.name = data.name;
             this.description = data.description;
             this.deadline = data.deadline;
             this.priority = data.priority;
@@ -31,6 +33,7 @@ export class DialogComponent implements OnInit {
 
     ngOnInit() {
         this.form = this.fb.group({
+            name: this.name,
             description: this.description,
             deadline: this.deadline,
             priority: this.priority,
