@@ -1,0 +1,159 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "AstroNote - Frontend",
+            "description": "AstroNote is a promising new startup hoping to make engineers from The Margaret Hamilton Academy of Code more productive. They aspire to launch a web-platform where engineers can define projects and necessary sub-tasks needed. They should also be able to mark tasks and projects as completed, assign them to other engineers, and sort them by status, alphabetical order, priority, assignee etc.",
+            "tasks": [
+                {
+                    "name": "Edit project name",
+                    "description": "When clicking the pencil icon, a diaglog should come up that allows the user to edit the project info like name, description, collaborators, and whether it's complete.",
+                    "priority": "p1",
+                    "progress": 0,
+                    "engineer_id": 1,
+                    "project_id": 1
+                },
+                {
+                    "name": "Search Bar functionality",
+                    "description": "Create a search bar component that is usable in the dashboard and single projects page.",
+                    "priority": "p3",
+                    "progress": 0,
+                    "engineer_id": 2,
+                    "project_id": 1
+                },
+                {
+                    "name": "Remove add collaborators button",
+                    "description": "The button should no longer exist on the single projects page. It should exist in the edit project dialog.",
+                    "priority": "p2",
+                    "progress": 0,
+                    "engineer_id": 3,
+                    "project_id": 1
+                },
+                {
+                    "name": "editTask method",
+                    "description": "Will need to pass down information to editTask().",
+                    "priority": "p0",
+                    "progress": 1,
+                    "engineer_id": 4,
+                    "project_id": 1
+                },
+                {
+                    "name": "deleteTask method",
+                    "description": "This method will need to be refactored. It is no longer using 3 arrays - todo, progress, done - no longer need to worry about that.",
+                    "priority": "p0",
+                    "progress": 1,
+                    "engineer_id": 4,
+                    "project_id": 1
+                },
+                {
+                    "name": "data workflow",
+                    "description": "Determine how data will flow through this application.",
+                    "priority": "p0",
+                    "progress": 1,
+                    "engineer_id": 4,
+                    "project_id": 1
+                },
+                {
+                    "name": "Refactor drag-drop-tasks",
+                    "description": "Refactor the component so that it's DRY and can be used 3 times in the single projects page.",
+                    "priority": "p0",
+                    "progress": 2,
+                    "engineer_id": 4,
+                    "project_id": 1
+                },
+                {
+                    "name": "Create tasks JSON",
+                    "description": "Create a JSON file to fake data that we will be retrieving from the backend.",
+                    "priority": "p1",
+                    "progress": 2,
+                    "engineer_id": 4,
+                    "project_id": 1
+                }
+            ],
+            "collaborators": ["jazmatos", "jwford", "ranffi", "quiyetbrul"],
+            "isComplete": false
+        },
+        {
+            "id": 2,
+            "name": "Multiverse Goals",
+            "description": "These are all my Multiverse goals that I am working on...",
+            "tasks": [
+                {
+                    "name": "",
+                    "description": "",
+                    "priority": "",
+                    "progress": "",
+                    "engineer_id": 1,
+                    "project_id": 2
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "priority": "",
+                    "progress": "",
+                    "engineer_id": 2,
+                    "project_id": 2
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "priority": "",
+                    "progress": "",
+                    "engineer_id": 3,
+                    "project_id": 2
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "priority": "",
+                    "progress": "",
+                    "engineer_id": 4,
+                    "project_id": 2
+                }
+            ],
+            "collaborators": ["jazmatos", "jwford", "ranffi", "quiyetbrul"],
+            "isComplete": false
+        },
+        {
+            "id": 3,
+            "name": "AstroNote - Backend",
+            "description": "This is the backend project for AstroNote...",
+            "tasks": [
+                {
+                    "name": "",
+                    "description": "",
+                    "priority": "",
+                    "progress": "",
+                    "engineer_id": 1,
+                    "project_id": 3
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "priority": "",
+                    "progress": "",
+                    "engineer_id": 2,
+                    "project_id": 3
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "priority": "",
+                    "progress": "",
+                    "engineer_id": 3,
+                    "project_id": 3
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "priority": "",
+                    "progress": "",
+                    "engineer_id": 4,
+                    "project_id": 3
+                }
+            ],
+            "collaborators": ["jazmatos", "jwford", "ranffi", "quiyetbrul"],
+            "isComplete": false
+        }
+    ]
+}
