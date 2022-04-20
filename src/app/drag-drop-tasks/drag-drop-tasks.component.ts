@@ -73,6 +73,7 @@ export class DragDropTasksComponent {
         // Button should be Update
     }
 
+    // TODO: Make sure deletion persists in the backend
     deleteTask(task: string, taskList: string) {
         switch (taskList) {
             case 'todo':
