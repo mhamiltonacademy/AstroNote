@@ -9,15 +9,15 @@
 
         <div
             cdkDropList
-            #todoList="cdkDropList"
-            [cdkDropListData]="todo"
+            #tasksList="cdkDropList"
+            [cdkDropListData]="tasks"
             class="task-list"
             (cdkDropListDropped)="drop($event)">
-            <div class="task-box" *ngFor="let item of todo" cdkDrag>
+            <div class="task-box" *ngFor="let item of tasks" cdkDrag>
                 {{item}}
                 <div>
                     <span class="material-icons" (click)="editTask(item)">edit</span>
-                    <span class="material-icons" (click)="deleteTask(item, 'todo')">delete</span>
+                    <span class="material-icons" (click)="deleteTask(item)">delete</span>
                 </div>
             </div>
         </div>

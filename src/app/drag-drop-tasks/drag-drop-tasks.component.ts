@@ -11,11 +11,7 @@ import { DialogComponent } from '../dialog/dialog.component';
 export class DragDropTasksComponent {
     constructor(private dialog: MatDialog) { }
 
-    todo = ['Edit project name ability', 'Search bar functionality', 'Nap a 3rd time', 'Fix Add Collaborators button'];
-
-    progress = ['Edit task functionality', 'Add task functionality', 'Nap again'];
-
-    done = ['Single page CSS styling', 'Add Edit Buttons', 'Nap', 'Check e-mail'];
+    tasks = ['Edit project name ability', 'Search bar functionality', 'Nap a 3rd time', 'Fix Add Collaborators button'];
 
     drop(event: CdkDragDrop<string[]>) {
         if (event.previousContainer === event.container) {
@@ -74,20 +70,8 @@ export class DragDropTasksComponent {
     }
 
     // TODO: Make sure deletion persists in the backend
-    deleteTask(task: string, taskList: string) {
-        switch (taskList) {
-            case 'todo':
-                // console.log("SwitchCase:", 'To Do list')
-                this.todo = this.todo.filter(t => t !== task);
-                break;
-            case 'progress':
-                // console.log("SwitchCase:", 'In Progress list')
-                this.progress = this.progress.filter(t => t !== task);
-                break;
-            case 'done':
-                // console.log("SwitchCase:", 'Done list')
-                this.done = this.done.filter(t => t !== task);
-                break;
-        }
+    deleteTask(task: string) {
+        // TODO: Need to fix: if there are 2 tasks w/ same name, BOTH will get deleted
+        this.tasks = this.tasks.filter(t => t !== task);
     }
 }
