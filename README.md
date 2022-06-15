@@ -8,7 +8,7 @@ AstroNote is a promising new startup hoping to make engineers from The Margaret 
 - TypeScript
 - Angular Material UI
 ### Backend
-- ??? This is a future problem…
+- 
 
 ## Functional Requirements:
 
